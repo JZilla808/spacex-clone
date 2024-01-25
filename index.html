@@ -150,7 +150,7 @@
 
     <footer>
       <nav>
-        <span>SpaceX &copy; 2023</span>
+        <span id="footer-year">SpaceX &copy; 2024</span>
         <a href="https://twitter.com/spacex">TWITTER</a>
         <a href="https://www.youtube.com/spacex">YOUTUBE</a>
         <a href="https://www.instagram.com/spacex/">INSTAGRAM</a>
@@ -164,5 +164,9 @@
     </footer>
     <script src="scripts/nav.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script>
+      document.getElementById("footer-year").textContent =
+        "SpaceX © " + new Date().getFullYear();
+    </script>
   </body>
 </html>
